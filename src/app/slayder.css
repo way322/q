@@ -1,0 +1,12 @@
+.slider {
+  width: 600px;
+  height: 350px;
+  animation: qwe 5s  infinite;
+}
+
+@keyframes qwe {
+    0%, 30% {background-image: url("/1.jpg");}
+    31%, 60% {background-image: url("/2.jpg");}
+    61%, 100% {background-image: url("/3.jpg");}
+}
+
