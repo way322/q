@@ -10,3 +10,10 @@
     61%, 100% {background-image: url("/3.jpg");}
 }
 
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
