@@ -1,6 +1,6 @@
 'use client';
 export default function Register() {
-  function handleSubmit(e) {
+  function w(e) {
       localStorage.setItem('user', JSON.stringify({
         login: e.target.login.value,
         password: e.target.password.value
@@ -8,10 +8,10 @@ export default function Register() {
     alert('OK');
   }
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={w}>
       <input name="login" placeholder="login"/>
       <input name="password" placeholder="password"/>
-      <button type="submit">Register</button>
+      <button>Register</button>
     </form>
   );
 }

@@ -3,7 +3,8 @@ CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL,
-    phone VARCHAR(20)  
+    phone VARCHAR(20), 
+    password_hash VARCHAR(255) NOT NULL
 );
 
 -- Таблица товаров

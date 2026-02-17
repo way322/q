@@ -1,6 +1,6 @@
 'use client';
 export default function Login() {
-  const handleSubmit = (e) => {
+  const w = (e) => {
     const form = e.target;
     const stored = JSON.parse(localStorage.getItem('user') || '{}');
     if (stored.login === form.login.value && stored.password === form.password.value) {
@@ -11,10 +11,10 @@ export default function Login() {
   };
   return (
     <main>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={w}>
         <input name="login" placeholder="Логин"/>
         <input name="password" placeholder="Пароль"/>
-        <button type="submit" >Войти</button>
+        <button>Войти</button>
       </form>
     </main>
   );
